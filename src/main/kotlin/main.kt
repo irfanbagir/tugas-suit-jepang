@@ -2,30 +2,40 @@ var playerOne: String = ""
 var playerTwo: String = ""
 fun main(args: Array<String>) {
     headerGame()
-    rumusSuit()
+
 }
 
 fun headerGame() {
     println("Pilih Gunting Batu Kertas")
     println("Player One silahkan pilih")
     playerOne = readLine().toString().toLowerCase()
-    if (playerOne == "") {
-        println("Pilih antara gunting, batu atau kertas")
-        headerGame()
-    } else {
-        headerGame2()
-    }
+    when(playerOne) {
+        "gunting" -> headerGame2()
+        "batu" -> headerGame2()
+        "kertas" -> headerGame2()
 
+        else ->{
+            println("Pilih antara gunting, batu atau kertas")
+            headerGame()
+        }
+    }
 
 }
 
 fun headerGame2() {
     println("Player Two silahkan pilih")
     playerTwo = readLine().toString().toLowerCase()
-    if (playerTwo == ""){
-        println("pilih antara gunting,batu,atau kertas")
-        headerGame2()
+    when(playerTwo) {
+        "gunting" -> rumusSuit()
+        "batu" -> rumusSuit()
+        "kertas" -> rumusSuit()
+
+        else ->{
+            println("Pilih antara gunting, batu atau kertas")
+            headerGame2()
+        }
     }
+
 }
 
 fun rumusSuit() {
