@@ -10,7 +10,7 @@ fun headerGame() {
     println("Player One silahkan pilih")
     playerOne = readLine().toString().toLowerCase()
     if (playerOne == "") {
-        println("Pilih antara gunting batu dan kertas")
+        println("Pilih antara gunting, batu atau kertas")
         headerGame()
     } else {
         headerGame2()
@@ -23,7 +23,7 @@ fun headerGame2() {
     println("Player Two silahkan pilih")
     playerTwo = readLine().toString().toLowerCase()
     if (playerTwo == ""){
-        println("pilih salah satu")
+        println("pilih antara gunting,batu,atau kertas")
         headerGame2()
     }
 }
@@ -38,6 +38,6 @@ fun rumusSuit() {
     } else if (playerOne == "kertas" && playerTwo == "batu") {
         println("Player 1 Wins")
     } else {
-        println("Player Two Wins")
+        println("Player 2 Wins")
     }
 }
