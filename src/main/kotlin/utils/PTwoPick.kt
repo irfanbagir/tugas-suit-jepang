@@ -3,7 +3,7 @@ var playerTwo : String = ""
 
 class PTwoPick {
     fun pTwoPick() {
-    println("Player Two silahkan pilih")
+    print("Player Two silahkan pilih :")
     playerTwo = readLine().toString().toLowerCase()
     when(playerTwo) {
         "gunting" -> RumusSuit().rumusSuit(playerOne, playerTwo)

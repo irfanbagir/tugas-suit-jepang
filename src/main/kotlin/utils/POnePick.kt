@@ -2,7 +2,7 @@ package utils
 var playerOne : String =""
 class POnePick {
     fun pOnePick(){
-        println("Player One silahkan pilih")
+        print("Player One silahkan pilih :")
         playerOne = readLine().toString().toLowerCase()
         when(playerOne) {
             "gunting" -> PTwoPick().pTwoPick()
