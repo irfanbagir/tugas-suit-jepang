@@ -5,7 +5,7 @@ class RumusSuit {
         if (playerOne == playerTwo) {
             println()
             println("Hasil:")
-            println("Draw")
+            println("Draw!")
         } else if (playerOne == "gunting" && playerTwo == "kertas") {
             println()
             println("Hasil:")
@@ -22,6 +22,15 @@ class RumusSuit {
             println()
             println("Hasil:")
             println("Player 2 Wins!")
+        }
+        println()
+        print("Main lagi?(Y/N):")
+        var a = readLine().toString().toLowerCase()
+        if (a == "y"){
+            POnePick().pOnePick()
+        }
+        else{
+            println("Thanks for Playing!!")
         }
     }
 }
