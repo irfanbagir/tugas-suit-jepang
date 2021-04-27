@@ -25,7 +25,7 @@ class RumusSuit {
         }
         println()
         print("Main lagi?(Y/N):")
-        var a = readLine().toString().toLowerCase()
+        val a = readLine().toString().toLowerCase()
         if (a == "y"){
             POnePick().pOnePick()
         }
