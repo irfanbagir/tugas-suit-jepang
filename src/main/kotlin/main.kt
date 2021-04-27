@@ -12,7 +12,7 @@ fun headerGame() {
     println("====================================")
     println("==== Game Suit Terminal Version ====")
     println("====================================")
-    println("Pilih Gunting Batu Kertas")
+    println("Pilih Gunting, Batu atau Kertas")
     POnePick().pOnePick()
 }
 
