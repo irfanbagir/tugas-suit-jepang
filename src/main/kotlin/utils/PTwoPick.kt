@@ -1,7 +1,7 @@
 package utils
 var playerTwo : String = ""
 
-class pTwoPick {
+class PTwoPick {
     fun pTwoPick() {
     println("Player Two silahkan pilih")
     playerTwo = readLine().toString().toLowerCase()

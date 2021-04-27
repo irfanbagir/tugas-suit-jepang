@@ -1,4 +1,5 @@
-import utils.pOnePick
+import utils.POnePick
+
 
 
 fun main(args: Array<String>) {
@@ -12,7 +13,7 @@ fun headerGame() {
     println("==== Game Suit Terminal Version ====")
     println("====================================")
     println("Pilih Gunting Batu Kertas")
-    pOnePick().pOnePick()
+    POnePick().pOnePick()
 }
 
 
