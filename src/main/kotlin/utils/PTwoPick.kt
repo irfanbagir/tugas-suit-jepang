@@ -6,9 +6,9 @@ class pTwoPick {
     println("Player Two silahkan pilih")
     playerTwo = readLine().toString().toLowerCase()
     when(playerTwo) {
-        "gunting" -> rumusSuit().rumusSuit(playerOne, playerTwo)
-        "batu" -> rumusSuit().rumusSuit(playerOne, playerTwo)
-        "kertas" -> rumusSuit().rumusSuit(playerOne, playerTwo)
+        "gunting" -> RumusSuit().rumusSuit(playerOne, playerTwo)
+        "batu" -> RumusSuit().rumusSuit(playerOne, playerTwo)
+        "kertas" -> RumusSuit().rumusSuit(playerOne, playerTwo)
 
         else ->{
             println("Anda tidak memilih antara gunting, batu atau kertas")

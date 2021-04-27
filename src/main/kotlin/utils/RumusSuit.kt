@@ -1,6 +1,6 @@
 package utils
 
-class rumusSuit {
+class RumusSuit {
     fun rumusSuit(playerOne: String, playerTwo: String) {
         if (playerOne == playerTwo) {
             println("Hasil")
