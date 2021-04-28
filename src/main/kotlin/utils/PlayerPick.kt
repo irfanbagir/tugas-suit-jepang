@@ -1,15 +1,14 @@
 package utils
 
-var playerOne : String = ""
-var playerTwo : String = ""
+lateinit var playerOne: String
+lateinit var playerTwo: String
+
 class PlayerPick {
     fun pOnePick() {
         print("Player One silahkan pilih :")
         playerOne = readLine().toString().toLowerCase()
         when (playerOne) {
-            "gunting" -> {
-                pTwoPick()
-            }
+            "gunting" -> pTwoPick()
             "batu" -> pTwoPick()
             "kertas" -> pTwoPick()
 

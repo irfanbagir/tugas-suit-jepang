@@ -28,10 +28,9 @@ class RumusSuit {
         println()
         print("Main lagi?(Y/N):")
         val a = readLine().toString().toLowerCase()
-        if (a == "y"){
+        if (a == "y") {
             PlayerPick().pOnePick()
-        }
-        else{
+        } else {
             println("Thanks for Playing!!")
             exitProcess(0)
         }
