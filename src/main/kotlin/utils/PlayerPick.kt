@@ -22,7 +22,7 @@ class PlayerPick {
 
     fun pTwoPick() {
         print("Player Two silahkan pilih :")
-        var playerTwo = readLine().toString().toLowerCase()
+        playerTwo = readLine().toString().toLowerCase()
         when (playerTwo) {
             "gunting" -> RumusSuit().rumusSuit(playerOne, playerTwo)
             "batu" -> RumusSuit().rumusSuit(playerOne, playerTwo)
