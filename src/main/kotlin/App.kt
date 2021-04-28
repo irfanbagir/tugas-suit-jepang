@@ -20,8 +20,7 @@ class App {
         fun playAgain(){
             println()
             print("Main lagi?(Y/N):")
-            val a = readLine().toString().toLowerCase()
-            if (a == "y") {
+            if (readLine().equals("Y", ignoreCase = true)) {
                 PlayerPick().playerOnePick()
             } else {
                 println("Thanks for Playing!!")
