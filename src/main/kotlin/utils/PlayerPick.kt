@@ -1,36 +1,36 @@
 package utils
 
-lateinit var playerOne: String
-lateinit var playerTwo: String
+lateinit var inputplayerOne: String
+lateinit var inputplayerTwo: String
 
 class PlayerPick {
-    fun pOnePick() {
+    fun playerOnePick() {
         print("Player One silahkan pilih :")
-        playerOne = readLine().toString().toLowerCase()
-        when (playerOne) {
-            "gunting" -> pTwoPick()
-            "batu" -> pTwoPick()
-            "kertas" -> pTwoPick()
+        inputplayerOne = readLine().toString().toLowerCase()
+        when (inputplayerOne) {
+            "gunting" -> playerTwoPick()
+            "batu" -> playerTwoPick()
+            "kertas" -> playerTwoPick()
 
             else -> {
                 println("Anda tidak memilih antara gunting, batu atau kertas")
-                pOnePick()
+                playerOnePick()
             }
         }
 
     }
 
-    fun pTwoPick() {
+    private fun playerTwoPick() {
         print("Player Two silahkan pilih :")
-        playerTwo = readLine().toString().toLowerCase()
-        when (playerTwo) {
-            "gunting" -> RumusSuit().rumusSuit(playerOne, playerTwo)
-            "batu" -> RumusSuit().rumusSuit(playerOne, playerTwo)
-            "kertas" -> RumusSuit().rumusSuit(playerOne, playerTwo)
+        inputplayerTwo = readLine().toString().toLowerCase()
+        when (inputplayerTwo) {
+            "gunting" -> RumusSuit().rumusSuit(inputplayerOne, inputplayerTwo)
+            "batu" -> RumusSuit().rumusSuit(inputplayerOne, inputplayerTwo)
+            "kertas" -> RumusSuit().rumusSuit(inputplayerOne, inputplayerTwo)
 
             else -> {
                 println("Anda tidak memilih antara gunting, batu atau kertas")
-                pTwoPick()
+                playerTwoPick()
             }
         }
 

@@ -5,7 +5,7 @@ class App {
         @JvmStatic
         fun main(args: Array<String>) {
             headerGame()
-            PlayerPick().pOnePick()
+            PlayerPick().playerOnePick()
         }
 
 

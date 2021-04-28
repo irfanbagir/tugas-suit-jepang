@@ -3,7 +3,7 @@ package utils
 import kotlin.system.exitProcess
 
 class RumusSuit {
-    fun rumusSuit(playerOne: String, playerTwo: String) {
+     fun rumusSuit(playerOne: String, playerTwo: String) {
         if (playerOne == playerTwo) {
             println()
             println("Hasil:")
@@ -29,7 +29,7 @@ class RumusSuit {
         print("Main lagi?(Y/N):")
         val a = readLine().toString().toLowerCase()
         if (a == "y") {
-            PlayerPick().pOnePick()
+            PlayerPick().playerOnePick()
         } else {
             println("Thanks for Playing!!")
             exitProcess(0)
