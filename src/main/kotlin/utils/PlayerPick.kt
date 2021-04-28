@@ -4,6 +4,7 @@ lateinit var inputplayerOne: String
 lateinit var inputplayerTwo: String
 
 class PlayerPick {
+
     fun playerOnePick() {
         print("Player One silahkan pilih :")
         inputplayerOne = readLine().toString().toLowerCase()

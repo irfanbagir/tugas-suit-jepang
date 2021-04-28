@@ -25,15 +25,7 @@ class RumusSuit {
             println("Hasil:")
             println("Player 2 Wins!")
         }
-        println()
-        print("Main lagi?(Y/N):")
-        val a = readLine().toString().toLowerCase()
-        if (a == "y") {
-            PlayerPick().playerOnePick()
-        } else {
-            println("Thanks for Playing!!")
-            exitProcess(0)
-        }
+
     }
 
 }
